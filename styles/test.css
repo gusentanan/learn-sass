@@ -1,0 +1,38 @@
+html,
+body,
+ul,
+ol {
+  padding: 0px;
+  margin: 0px; }
+
+.navbar-custom {
+  background-color: #ffcccc; }
+  .navbar-custom .navbar-brand {
+    color: black; }
+
+.nav-link {
+  font-family: monospace;
+  color: black; }
+
+.headline h1 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.aboutMe h1 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background-color: blue; }
+
+.card {
+  width: 20rem; }
+
+.container-fluid {
+  background-color: red;
+  justify-content: center; }
+
+/*# sourceMappingURL=test.css.map */

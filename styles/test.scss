@@ -1,0 +1,53 @@
+html,
+body,
+ul,
+ol {
+	padding: 0px;
+	margin: 0px;
+	
+}
+
+@mixin text_center{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navbar-custom {
+	background-color: #ffcccc;
+	 .navbar-brand {
+	 	color: black;
+	}
+}
+
+.nav-link {
+	font-family: monospace;
+	color: black;
+}
+
+.headline {
+	h1{
+		@include text_center();
+	}
+}
+
+.aboutMe {
+
+	h1{
+		@include text_center();
+		height: 50vh;
+		background-color: blue;
+	}
+}
+
+
+.card {
+	width: 20rem;
+}
+
+.container-fluid {
+	background-color: red;
+	justify-content: center;
+}
+
