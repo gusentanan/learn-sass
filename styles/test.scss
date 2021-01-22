@@ -1,53 +1,122 @@
-html,
-body,
-ul,
-ol {
-	padding: 0px;
-	margin: 0px;
-	
+@import "./base";
+@import "./item-design";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-@mixin text_center{
-	height: 100vh;
+main {
+	min-height: 100vh;
+	background: $mix-color1;
 	display: flex;
-	justify-content: center;
 	align-items: center;
-}
-
-.navbar-custom {
-	background-color: #ffcccc;
-	 .navbar-brand {
-	 	color: black;
-	}
-}
-
-.nav-link {
-	font-family: monospace;
-	color: black;
-}
-
-.headline {
-	h1{
-		@include text_center();
-	}
-}
-
-.aboutMe {
-
-	h1{
-		@include text_center();
-		height: 50vh;
-		background-color: blue;
-	}
-}
-
-
-.card {
-	width: 20rem;
-}
-
-.container-fluid {
-	background-color: red;
 	justify-content: center;
 }
 
+.main {
+	background: $box-color1;
+	min-height: 80vh;
+	width: 60%;
+	background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
+	border-radius: 2rem;
+	z-index: 2;
+	backdrop-filter: blur(2rem);
+	display: flex;
+}
+
+.circle1 {
+	@include circle-design();
+	top: 5%;
+	right: 15%;
+}
+
+.circle2 {
+	@include circle-design();
+	bottom: 5%;
+	left: 15%;
+}
+
+.user {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	justify-content: space-evenly;
+	background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
+	border-radius: 2rem;
+
+	.about-me {
+
+		h1, h2 {
+			font-size: 14;
+		}
+
+		h2 {
+			font-weight: 10;
+		}
+	}
+
+	.navigation {
+		.link {
+			display: flex;
+			justify-content: center;
+			margin: 2rem 0rem;
+		
+			h2 {
+				font-size: 15;
+			}
+		}
+	}
+
+	.my-resume {
+		background: $mix-color1;
+		border-radius: 2rem;
+		padding: 1rem;
+		color: white;
+
+		h2 {
+			font-size: 18;
+		}
+
+	}
+}
+
+.projects {
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+	margin: 3rem;
+	margin-bottom: 1rem;
+	justify-content: space-evenly;
+
+	h2 {
+		@include font-conf();
+	}
+
+	input {
+		background: $mix-color1;
+		border:none;
+		border-radius: 2rem;
+		width: 50%;
+	}
+
+	
+	.project {
+		 h2 {
+			 font-size: 20;
+		 }
+		 h5 {
+			font-size: 15;
+			font-weight: 10;
+		 }
+		 
+		 background: white;
+		 border-radius: 1rem;
+		 padding: 2rem;
+
+		
+	}
+}

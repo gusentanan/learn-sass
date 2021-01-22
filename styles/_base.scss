@@ -1,0 +1,16 @@
+$base-color1: rgb(92, 83, 219);
+$base-color2: rgb(203, 158, 233);
+$box-color1: white;
+
+$font-color1:  rgb(99, 56, 128);
+
+$mix-color1: linear-gradient(to right top, $base-color1, $base-color2);
+$mix-color2: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), $base-color2);
+
+@mixin font-conf {
+    font-family: "Poppins", sans-serif;
+    color: $font-color1;
+    font-weight: 600;
+    opacity: 0.8;
+}
+

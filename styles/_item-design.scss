@@ -1,0 +1,11 @@
+@import "./base";
+
+@mixin circle-design {
+	background: $box-color1;
+	background: $mix-color2;
+	position: absolute;
+	height: 20rem;
+	width: 20rem;
+	border-radius: 50%;
+	backdrop-filter: blur(1rem);
+}
